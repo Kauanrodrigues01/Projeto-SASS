@@ -2,13 +2,15 @@
 @use '../abstract/mixins';
 
 .contexto{
+    padding: 0 3rem;
     div:nth-child(1){
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 130px;
+        margin-left: calc(130px - 3rem);
         gap: 2rem;
         margin-bottom: 4rem;
+
         .contexto__container{
             display: flex;
             flex-direction: column;
@@ -17,7 +19,7 @@
             margin: 0;
 
             .contexto__titulo{
-                @include mixins.ff-fs-cl(variaveis.$ft-titulo, 2rem, variaveis.$preto); 
+                @include mixins.titulo-32px; 
                 font-style: normal;
                 font-weight: 900;
                 line-height: 200%; /* 64px */
@@ -25,7 +27,7 @@
 
             .contexto__texto{
                 max-width: 560px;
-                @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto); 
+                @include mixins.texto-16px; 
                 font-style: normal;
                 font-weight: 400;
                 line-height: 200%; /* 32px */
@@ -41,6 +43,7 @@
         @include mixins.flex-container;
         gap: 2rem;
         margin-bottom: 140px;
+        flex-wrap: wrap;
         .contexto__container-porcentagem{
             display: flex;
             flex-direction: column;
@@ -50,7 +53,7 @@
             gap: 0;
 
             .contexto__porcentagem{
-                @include mixins.ff-fs-cl(variaveis.$ft-titulo, 32px, variaveis.$preto); 
+                @include mixins.titulo-32px; 
                 font-style: normal;
                 font-weight: 900;
                 line-height: 200%; /* 64px */
@@ -59,11 +62,19 @@
             .contexto__porcentagem-texto{
                 max-width: 365px;
 
-                @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto);
+                @include mixins.texto-16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 200%; /* 32px */
             }
         }
+    }
+
+    @include mixins.responsivo(1000px){
+        div:nth-child(1){
+            flex-direction: column;
+            margin-left: 0;
+        }
+        
     }
 }

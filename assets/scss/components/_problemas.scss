@@ -17,14 +17,14 @@
         align-items: flex-start;
         flex-direction: column;
         h2{
-            @include mixins.ff-fs-cl(variaveis.$ft-titulo, 2rem, variaveis.$preto); 
+            @include mixins.titulo-32px; 
             font-style: normal;
             font-weight: 900;
             line-height: 200%; /* 64px */
         }
 
         p{
-            @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto); 
+            @include mixins.texto-16px; 
             margin-bottom: 2rem;
         }
 
@@ -35,12 +35,20 @@
             gap: 2rem;
 
             li{
-                @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto); 
+                @include mixins.texto-16px; 
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                gap: 0.5rem;
+                gap: 0.7rem;
+                p{
+                    margin: 0;
+                }
             }
         }
+    }
+}
+
+@include mixins.responsivo(1000px){
+    .problemas{
+        flex-direction: column-reverse;
     }
 }

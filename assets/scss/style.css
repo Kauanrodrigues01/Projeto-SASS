@@ -9,6 +9,7 @@ body {
   text-align: center;
   padding-top: 3rem;
   position: relative;
+  padding: 3rem 3rem 0 3rem;
 }
 .cabecalho .cabecalho__container-logo {
   display: flex;
@@ -29,9 +30,9 @@ body {
   background-color: #FFFFFF;
   padding: 6px 8px;
   border-radius: 15px;
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #202020;
+  font-family: "Montserrat", sans-serif;
 }
 .cabecalho .cabecalho__titulo {
   font-family: "Elsie Swash Caps", serif;
@@ -41,9 +42,9 @@ body {
   margin-bottom: 2rem;
 }
 .cabecalho .cabecalho__texto {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #202020;
+  font-family: "Montserrat", sans-serif;
   max-width: 754px;
   margin: auto;
   margin-bottom: 2em;
@@ -55,10 +56,10 @@ body {
   top: 70%;
   transform: translateX(-50%);
 }
-
 .cliente-tarefa {
   margin-top: 16rem;
   margin-bottom: 10rem;
+  padding: 0 3rem;
 }
 .cliente-tarefa .cliente-tarefa__container {
   display: flex;
@@ -68,26 +69,29 @@ body {
   padding: 2rem 0;
 }
 .cliente-tarefa .cliente-tarefa__container .cliente-tarefa__titulo {
-  font-family: "Elsie Swash Caps", serif;
-  font-size: 32px;
+  font-size: 2rem;
   color: #202020;
+  font-family: "Elsie Swash Caps", serif;
   font-weight: 700;
 }
 .cliente-tarefa .cliente-tarefa__container .cliente-tarefa__texto {
   max-width: 580px;
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #202020;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 200%; /* 32px */
 }
 
+.contexto {
+  padding: 0 3rem;
+}
 .contexto div:nth-child(1) {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 130px;
+  margin-left: calc(130px - 3rem);
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -99,18 +103,18 @@ body {
   margin: 0;
 }
 .contexto div:nth-child(1) .contexto__container .contexto__titulo {
-  font-family: "Elsie Swash Caps", serif;
   font-size: 2rem;
   color: #202020;
+  font-family: "Elsie Swash Caps", serif;
   font-style: normal;
   font-weight: 900;
   line-height: 200%; /* 64px */
 }
 .contexto div:nth-child(1) .contexto__container .contexto__texto {
   max-width: 560px;
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #202020;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 200%; /* 32px */
@@ -126,6 +130,7 @@ body {
   align-items: center;
   gap: 2rem;
   margin-bottom: 140px;
+  flex-wrap: wrap;
 }
 .contexto div:nth-child(2) .contexto__container-porcentagem {
   display: flex;
@@ -136,21 +141,27 @@ body {
   gap: 0;
 }
 .contexto div:nth-child(2) .contexto__container-porcentagem .contexto__porcentagem {
-  font-family: "Elsie Swash Caps", serif;
-  font-size: 32px;
+  font-size: 2rem;
   color: #202020;
+  font-family: "Elsie Swash Caps", serif;
   font-style: normal;
   font-weight: 900;
   line-height: 200%; /* 64px */
 }
 .contexto div:nth-child(2) .contexto__container-porcentagem .contexto__porcentagem-texto {
   max-width: 365px;
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #202020;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 200%; /* 32px */
+}
+@media (max-width: 1000px) {
+  .contexto div:nth-child(1) {
+    flex-direction: column;
+    margin-left: 0;
+  }
 }
 
 .problemas {
@@ -171,17 +182,17 @@ body {
   flex-direction: column;
 }
 .problemas .problemas__container h2 {
-  font-family: "Elsie Swash Caps", serif;
   font-size: 2rem;
   color: #202020;
+  font-family: "Elsie Swash Caps", serif;
   font-style: normal;
   font-weight: 900;
   line-height: 200%; /* 64px */
 }
 .problemas .problemas__container p {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #202020;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 2rem;
 }
 .problemas .problemas__container ul {
@@ -191,15 +202,103 @@ body {
   gap: 2rem;
 }
 .problemas .problemas__container ul li {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #202020;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.problemas .problemas__container ul li p {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .problemas {
+    flex-direction: column-reverse;
+  }
+}
+.juliana {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  padding: 0 3rem;
+  margin-top: 10rem;
+  gap: 2rem;
+}
+.juliana .juliana__container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.juliana .juliana__container .juliana__container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.juliana .juliana__container .juliana__container-1 h2 {
+  font-family: "Elsie Swash Caps", serif;
+  font-size: 32px;
+  color: #202020;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 200%; /* 64px */
+}
+.juliana .juliana__container .juliana__container-1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.juliana .juliana__container .juliana__container-1 div p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 32px */
+  max-width: 463px;
+}
+.juliana .juliana__container .juliana__container-2 {
+  display: flex;
+  align-self: flex-end;
+  gap: 2rem;
+}
+.juliana .juliana__container .juliana__container-2 ul.juliana__container-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.juliana .juliana__container .juliana__container-2 ul.juliana__container-lista .juliana__container-lista-item-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+}
+.juliana .juliana__container .juliana__container-2 ul.juliana__container-lista .juliana__container-lista-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.juliana .juliana__container .juliana__container-2 ul.juliana__container-lista .juliana__container-lista-item p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  max-width: 200px;
 }
 
+@media (max-width: 1000px) {
+  .juliana {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

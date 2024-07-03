@@ -50,7 +50,28 @@
         transform: translateX(-50%);
     }
     
-    @include mixins.responsivo(1000px){
-        
-    }
+    
+}
+
+@include mixins.responsivo(720px){
+    .cabecalho{
+        padding: 3rem 12px 0 12px;
+
+        .cabecalho__titulo{
+            @include mixins.ff-fs-cl(variaveis.$ft-titulo, 36px, variaveis.$preto);
+        }
+    
+        .cabecalho__texto{
+            @include mixins.texto-14px;
+            padding-bottom: 3rem;
+            margin-bottom: 0;
+            span{
+                @include mixins.texto-16px;
+            }
+        }
+
+        .img-mac{
+            display: none;
+        }
+    }  
 }

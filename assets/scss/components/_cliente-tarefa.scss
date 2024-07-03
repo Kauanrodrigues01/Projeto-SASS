@@ -25,3 +25,17 @@
         }
     }
 }
+
+@include mixins.responsivo(720px){
+    .cliente-tarefa{
+        padding: 0 12px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .cliente-tarefa__container{
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+    }
+}

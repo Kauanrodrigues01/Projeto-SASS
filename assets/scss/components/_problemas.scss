@@ -4,6 +4,7 @@
 .problemas{
     @include mixins.flex-container;
     gap: 2rem;
+    padding: 0 3rem;
 
     .problemas__img{
         width: 100%;
@@ -50,5 +51,39 @@
 @include mixins.responsivo(1000px){
     .problemas{
         flex-direction: column-reverse;
+    }
+}
+
+@include mixins.responsivo(720px){
+    .problemas{
+        padding: 0 12px;
+        .problemas__container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            h2{
+                @include mixins.titulo-29px; 
+                font-style: normal;
+                font-weight: 900;
+                line-height: 200%; /* 64px */
+            }
+    
+            p{
+                @include mixins.texto-14px; 
+                margin-bottom: 2rem;
+            }
+    
+            ul{
+    
+                li{
+                    @include mixins.texto-14px; 
+                    p{
+                        @include mixins.texto-14px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
     }
 }

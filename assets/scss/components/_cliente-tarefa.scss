@@ -1,0 +1,26 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.cliente-tarefa{
+    margin-top: 16rem;
+    margin-bottom: 10rem;
+
+    .cliente-tarefa__container{
+        @include mixins.flex-container;
+        gap: 77px;
+        padding: 2rem 0;
+
+        .cliente-tarefa__titulo{
+            @include mixins.ff-fs-cl(variaveis.$ft-titulo, 32px, variaveis.$preto); 
+            font-weight: 700;
+        }
+
+        .cliente-tarefa__texto{
+            max-width: 580px;
+            @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto); 
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200%; /* 32px */
+        }
+    }
+}

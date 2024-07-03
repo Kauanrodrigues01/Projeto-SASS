@@ -1,0 +1,11 @@
+@use 'abstract/variaveis';
+@use 'abstract/mixins';
+@use 'abstract/root';
+@use 'components/header';
+@use 'components/cliente-tarefa.scss';
+@use 'components/contexto';
+@use 'components/problemas';
+@use 'reset/reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');

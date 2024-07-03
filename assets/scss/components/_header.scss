@@ -1,0 +1,52 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.cabecalho{
+    background-color: variaveis.$amarelo-fundo;
+    text-align: center;
+    padding-top: 3rem;
+    position: relative;
+
+    .cabecalho__container-logo{
+        @include mixins.flex-container;
+
+        .cabecalho__logo{
+            max-width: 180px;
+        }
+    }
+
+    .cabecalho__lista{
+        @include mixins.flex-container;
+        gap: 1.5rem;
+        margin: 2rem 0;
+
+        .cabecalho__lista-item{
+            background-color: variaveis.$branco;
+            padding: 6px 8px;
+            border-radius: 15px;
+            @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto); 
+        }
+    }
+
+    .cabecalho__titulo{
+        @include mixins.ff-fs-cl(variaveis.$ft-titulo, 52px, variaveis.$preto);
+        font-weight: 900;
+        margin-bottom: 2rem;
+    }
+
+    .cabecalho__texto{
+        @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto);
+        max-width: 754px;
+        margin: auto;
+        margin-bottom: 2em;
+        line-height: 200%; /* 32px */
+        padding-bottom: 13rem;
+    }
+    
+    .img-mac{
+        position: absolute;
+        top: 70%;
+        transform: translateX(-50%);
+    }
+    
+}

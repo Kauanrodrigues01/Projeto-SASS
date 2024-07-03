@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #F8F8F8;
+}
+
+.cabecalho {
+  background-color: #FFF3D4;
+  text-align: center;
+  padding-top: 3rem;
+  position: relative;
+}
+.cabecalho .cabecalho__container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cabecalho .cabecalho__container-logo .cabecalho__logo {
+  max-width: 180px;
+}
+.cabecalho .cabecalho__lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.cabecalho .cabecalho__lista .cabecalho__lista-item {
+  background-color: #FFFFFF;
+  padding: 6px 8px;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+}
+.cabecalho .cabecalho__titulo {
+  font-family: "Elsie Swash Caps", serif;
+  font-size: 52px;
+  color: #202020;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+.cabecalho .cabecalho__texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  max-width: 754px;
+  margin: auto;
+  margin-bottom: 2em;
+  line-height: 200%; /* 32px */
+  padding-bottom: 13rem;
+}
+.cabecalho .img-mac {
+  position: absolute;
+  top: 70%;
+  transform: translateX(-50%);
+}
+
+.cliente-tarefa {
+  margin-top: 16rem;
+  margin-bottom: 10rem;
+}
+.cliente-tarefa .cliente-tarefa__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 77px;
+  padding: 2rem 0;
+}
+.cliente-tarefa .cliente-tarefa__container .cliente-tarefa__titulo {
+  font-family: "Elsie Swash Caps", serif;
+  font-size: 32px;
+  color: #202020;
+  font-weight: 700;
+}
+.cliente-tarefa .cliente-tarefa__container .cliente-tarefa__texto {
+  max-width: 580px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 32px */
+}
+
+.contexto div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 130px;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.contexto div:nth-child(1) .contexto__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+}
+.contexto div:nth-child(1) .contexto__container .contexto__titulo {
+  font-family: "Elsie Swash Caps", serif;
+  font-size: 2rem;
+  color: #202020;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 200%; /* 64px */
+}
+.contexto div:nth-child(1) .contexto__container .contexto__texto {
+  max-width: 560px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 32px */
+}
+.contexto div:nth-child(1) img {
+  width: 100%;
+  max-width: 366px;
+  box-shadow: 300px -60px 1px #FFF3D4;
+}
+.contexto div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 140px;
+}
+.contexto div:nth-child(2) .contexto__container-porcentagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 0;
+}
+.contexto div:nth-child(2) .contexto__container-porcentagem .contexto__porcentagem {
+  font-family: "Elsie Swash Caps", serif;
+  font-size: 32px;
+  color: #202020;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 200%; /* 64px */
+}
+.contexto div:nth-child(2) .contexto__container-porcentagem .contexto__porcentagem-texto {
+  max-width: 365px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 32px */
+}
+
+.problemas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.problemas .problemas__img {
+  width: 100%;
+  max-width: 465px;
+  box-shadow: -270px 45px 1px #FFF3D4;
+}
+.problemas .problemas__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.problemas .problemas__container h2 {
+  font-family: "Elsie Swash Caps", serif;
+  font-size: 2rem;
+  color: #202020;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 200%; /* 64px */
+}
+.problemas .problemas__container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  margin-bottom: 2rem;
+}
+.problemas .problemas__container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.problemas .problemas__container ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}/*# sourceMappingURL=style.css.map */

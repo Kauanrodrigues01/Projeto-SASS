@@ -1,0 +1,46 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.problemas{
+    @include mixins.flex-container;
+    gap: 2rem;
+
+    .problemas__img{
+        width: 100%;
+        max-width: 465px;
+        box-shadow: -270px 45px 1px variaveis.$amarelo-fundo;
+    }
+
+    .problemas__container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        h2{
+            @include mixins.ff-fs-cl(variaveis.$ft-titulo, 2rem, variaveis.$preto); 
+            font-style: normal;
+            font-weight: 900;
+            line-height: 200%; /* 64px */
+        }
+
+        p{
+            @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto); 
+            margin-bottom: 2rem;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+
+            li{
+                @include mixins.ff-fs-cl(variaveis.$ft-texto, 1rem, variaveis.$preto); 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    }
+}
